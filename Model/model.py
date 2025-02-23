@@ -3,9 +3,6 @@ from numpy import array
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import load_model
 
-
-
-
 def Pred(df, time_step, Model):# input arguments dataframe, time step, Model path
     scaler=MinMaxScaler (feature_range=(0,1))
     df=scaler.fit_transform(np.array(df).reshape(-1,1))

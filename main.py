@@ -33,7 +33,6 @@ def Load_df(Ticker_Symbol, Start):
     actual_value =df1[-1][0]
     return df,actual_value
 
-
 # API hosting
 app = FastAPI()
 

@@ -1,11 +1,9 @@
 import pandas as pd 
 import numpy as np
 import yfinance as yf
-
-
 from Model.model import *
-time_step =60
 
+time_step =60
 ticker_symbol = '^CRSLDX'
 Start_Date = '2024-01-01'
 
@@ -30,8 +28,3 @@ def Nifty_Pred(Nifty500_Model):
     predicted_value = float(predicted_value)
     err = cal_err(actual_value,predicted_value)
     return {"Predicted_Value": predicted_value, "Actual_Value": actual_value, "error": err}
-
-
-
-
-
