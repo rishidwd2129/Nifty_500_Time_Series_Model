@@ -14,7 +14,6 @@ def Pred(df, time_step, Model):# input arguments dataframe, time step, Model pat
     n_steps=time_step
     i=0
     while(i<1):
-
         if(len(temp_input)>time_step):
             #print(temp_input)
             x_input=np.array(temp_input[1:])
@@ -43,7 +42,4 @@ def Pred(df, time_step, Model):# input arguments dataframe, time step, Model pat
 def cal_err(actual_value,predicted_value):
     err = (predicted_value - actual_value)/actual_value
     err = err*100
-
     return err
-    
-
